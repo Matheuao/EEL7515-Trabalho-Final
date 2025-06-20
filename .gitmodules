@@ -1,0 +1,3 @@
+[submodule "LoRaWANForest"]
+	path = LoRaWANForest
+	url = https://github.com/Matheuao/LoRaWANForest.git
