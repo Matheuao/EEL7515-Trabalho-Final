@@ -31,15 +31,20 @@ def gerar_payload_hex(dados):
 
     # Converte para hexadecimal
     payload_hex = payload_bytes.hex().upper()
+
+    print(f"latitude encoded:{lat_encoded}\n")
+    print(f"longitude encoded:{lon_encoded}\n")
+           
     return payload_hex
 
 
 dados_exemplo = {
     'latitude':-27.600686079889304,
     'longitude':-48.51745291535339,
-    'classe': 2,
+    'classe': 1,
     'battery': 88
 }
 
 payload = gerar_payload_hex(dados_exemplo)
-print(f"Payload gerado (hex): {payload}")
+print(f"Payload gerado (hex): {payload}\n")
+
