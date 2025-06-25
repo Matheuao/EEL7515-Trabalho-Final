@@ -41,7 +41,7 @@ def gerar_payload_hex(dados):
 dados_exemplo = {
     'latitude':-27.600686079889304,
     'longitude':-48.51745291535339,
-    'classe': 1,
+    'classe': 2,
     'battery': 88
 }
 

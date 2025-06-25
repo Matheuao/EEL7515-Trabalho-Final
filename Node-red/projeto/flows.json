@@ -1,0 +1,384 @@
+[
+    {
+        "id": "05792c9fb914ecf2",
+        "type": "tab",
+        "label": "Fluxo 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5bda6e03db28e630",
+        "type": "sqlitedb",
+        "db": "floresta.db",
+        "mode": "RW"
+    },
+    {
+        "id": "09e14b442c3c2768",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "5b077cecad904b01",
+        "type": "ui_tab",
+        "name": "worldmap",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "840ef2ce20a85ddb",
+        "type": "mqtt-broker",
+        "name": "Florest",
+        "broker": "au1.cloud.thethings.network",
+        "port": "8883",
+        "tls": "09e14b442c3c2768",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "4987bfa3261dcb82",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "5b077cecad904b01",
+        "order": 1,
+        "disp": false,
+        "width": "25",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d3725167cd4003a9",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "5b077cecad904b01",
+        "order": 2,
+        "disp": false,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7b0c037d318a3945",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "34c488ab4bb7e038",
+        "type": "mqtt in",
+        "z": "05792c9fb914ecf2",
+        "name": "",
+        "topic": "v3/trabalhofinal@ttn/devices/+/up",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "840ef2ce20a85ddb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 670,
+        "y": 420,
+        "wires": [
+            [
+                "ce552d4db2c68ac1",
+                "aab0063c572ab7f7"
+            ]
+        ]
+    },
+    {
+        "id": "ce552d4db2c68ac1",
+        "type": "debug",
+        "z": "05792c9fb914ecf2",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "aab0063c572ab7f7",
+        "type": "function",
+        "z": "05792c9fb914ecf2",
+        "name": "function 1",
+        "func": "// Extrai os dados da mensagem da TTN\nlet p = msg.payload.uplink_message.decoded_payload;\nlet deviceId = msg.payload.end_device_ids.device_id;\n\n// Mapa de tradução dos eventos\nconst eventos = {\n    0: { texto: \"Normal\", icon: \"tree-deciduous\", cor: \"green\" },\n    1: { texto: \"Incêndio\", icon: \"fire\", cor: \"red\" },\n    2: { texto: \"Motosserra\", icon: \"tools\", cor: \"orange\" },\n    3: { texto: \"Humano\", icon: \"user\", cor: \"blue\" },\n    4: { texto: \"Motor\", icon: \"car\", cor: \"gray\" },\n    5: { texto: \"Desmatamento\", icon: \"leaf\", cor: \"brown\" },\n    6: { texto: \"Animal\", icon: \"paw\", cor: \"purple\" },\n    7: { texto: \"Ruído desconhecido\", icon: \"volume-up\", cor: \"black\" }\n};\n\n// Procura o evento ou usa um padrão\nlet evento = eventos[p.classe] || { texto: `Classe ${p.classe}`, icon: \"question\", cor: \"yellow\" };\n\n// --- Preparação da Mensagem para o Mapa (Saída 1) ---\nlet msgParaMapa = {\n    payload: {\n        name: deviceId,\n        lat: p.latitude,\n        lon: p.longitude,\n        layer: \"Dispositivos\",\n        icon: evento.icon,\n        iconColor: evento.cor,\n        info: `Bateria: ${p.battery}%<br>Evento: ${evento.texto}`\n    }\n};\n\n// --- Preparação da Mensagem para o Banco de Dados (Saída 2) ---\nconst timestamp = new Date().toISOString();\nconst query = `INSERT INTO eventos (timestamp, deviceId, latitude, longitude, tipo_evento, bateria) VALUES ('${timestamp}', '${deviceId}', ${p.latitude}, ${p.longitude}, '${evento.texto}', ${p.battery});`;\n\nlet msgParaBanco = {\n    topic: query // O nó sqlite espera a query no msg.topic\n};\n\n// Retorna um array com as duas mensagens, uma para cada saída\nreturn [msgParaMapa, msgParaBanco];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 520,
+        "wires": [
+            [
+                "150a245e33b32199"
+            ],
+            [
+                "07326ad49785f799"
+            ]
+        ]
+    },
+    {
+        "id": "07326ad49785f799",
+        "type": "sqlite",
+        "z": "05792c9fb914ecf2",
+        "mydb": "5bda6e03db28e630",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "Banco_de_Dados_Floresta",
+        "x": 860,
+        "y": 600,
+        "wires": [
+            [
+                "d6274929c98f4e07"
+            ]
+        ]
+    },
+    {
+        "id": "d6274929c98f4e07",
+        "type": "trigger",
+        "z": "05792c9fb914ecf2",
+        "name": "",
+        "op1": "",
+        "op2": "",
+        "op1type": "pay",
+        "op2type": "payl",
+        "duration": "500",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 740,
+        "y": 700,
+        "wires": [
+            [
+                "a841f65d08854d38"
+            ]
+        ]
+    },
+    {
+        "id": "a841f65d08854d38",
+        "type": "function",
+        "z": "05792c9fb914ecf2",
+        "name": "Montar Query SELECT",
+        "func": "// Esta query busca as colunas timestamp e tipo_evento dos 5 últimos registros\n// ordenando pelo ID de forma decrescente para pegar os mais recentes.\nmsg.topic = \"SELECT timestamp, tipo_evento FROM eventos ORDER BY id DESC LIMIT 5\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 700,
+        "wires": [
+            [
+                "dcebcb890517e3da"
+            ]
+        ]
+    },
+    {
+        "id": "dcebcb890517e3da",
+        "type": "sqlite",
+        "z": "05792c9fb914ecf2",
+        "mydb": "5bda6e03db28e630",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "Ler Últimos Eventos",
+        "x": 780,
+        "y": 820,
+        "wires": [
+            [
+                "47ac1eda32c26a58"
+            ]
+        ]
+    },
+    {
+        "id": "150a245e33b32199",
+        "type": "ui_worldmap",
+        "z": "05792c9fb914ecf2",
+        "group": "4987bfa3261dcb82",
+        "order": 1,
+        "width": 25,
+        "height": 16,
+        "name": "Mapa de Eventos",
+        "lat": "-27.59933154042236",
+        "lon": "-48.51850093934469",
+        "zoom": "13",
+        "layer": "OSMC",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "hide",
+        "layers": "hide",
+        "panit": "false",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "true",
+        "coords": "none",
+        "showgrid": "false",
+        "showruler": "false",
+        "allowFileDrop": "false",
+        "path": "/worldmap",
+        "overlist": "DR,CO,RA,DN,HM",
+        "maplist": "OSMG,OSMC,EsriC,EsriS,EsriT,EsriDG,UKOS",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
+        "x": 1150,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "47ac1eda32c26a58",
+        "type": "ui_template",
+        "z": "05792c9fb914ecf2",
+        "group": "d3725167cd4003a9",
+        "name": "",
+        "order": 1,
+        "width": "6",
+        "height": "12",
+        "format": "<style>\n    .history-table {\n        width: 100%;\n        border-collapse: collapse;\n    }\n\n    .history-table th,\n    .history-table td {\n        border: 1px solid #ADD8E6;\n        padding: 6px;\n        text-align: left;\n    }\n\n    .history-table th {\n        background-color: #FFF;\n    }\n\n    .history-table tr:nth-child(even) {\n        background-color: #ADD8E6;\n    }\n</style>\n\n<table class=\"history-table\">\n    <thead>\n        <tr>\n            <th>Horário</th>\n            <th>Evento</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr ng-repeat=\"item in msg.payload\">\n            <td>{{item.timestamp | date:'dd/MM HH:mm:ss'}}</td>\n            <td>{{item.tipo_evento}}</td>\n        </tr>\n    </tbody>\n</table>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1020,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    }
+]
