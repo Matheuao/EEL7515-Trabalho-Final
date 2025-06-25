@@ -1,8 +1,3 @@
-Claro! Abaixo está um `README.md` bem organizado e claro para que qualquer pessoa consiga rodar seu projeto IoT com Node-RED, Docker, MQTT (TTN), SQLite e LocalTunnel.
-
----
-
-````markdown
 # Projeto IoT - Monitoramento com Node-RED + TTN + SQLite
 
 Este projeto é uma aplicação Node-RED empacotada com Docker, que se conecta à The Things Network (TTN) via MQTT, armazena os dados recebidos em um banco de dados SQLite e disponibiliza um painel (`dashboard`) acessível pela internet via LocalTunnel.
